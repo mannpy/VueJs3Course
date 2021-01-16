@@ -46,7 +46,7 @@ export default {
     addBlock(type, value) {
       this.blocks.push({
         componentName: `app-${type}-block`,
-        id: Math.random(),
+        id: Date.now(),
         value: value
       });
     },
